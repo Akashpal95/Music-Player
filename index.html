@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MusicPlayer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+<body>
+	<nav class="nav">
+		<nav class="nav_bar-container">
+			<div class="logo-container">
+				<img src="static/ninjastudiologo.png">
+			</div>
+			<div class="logo_name-container color-white">
+				<p id="ninja">Ninja</p>
+				<p id="studio">Studio</p>
+			</div>
+			<div class = "nav_links">
+				<ul class="horizontal_list">
+					<li>Favourites</li>
+				</ul>
+			</div>
+			<div class="search_box_container">
+				<span class="search_icon color-white">
+					<i class="fa fa-search searchIcon"></i>
+				</span>
+				<input class="search_box" type="search" name="search" placeholder="search" spellcheck="false">
+				<span class="speech_icon color-white">
+					<i class="fas fa-microphone"></i>
+				</span>	
+			</div>
+			<div class="notification-container">
+				<i class="fas fa-bell color-white"></i>
+			</div>
+			<div class="account_image-container">
+				<img src="static/my_image.jpeg" class="avatar">
+			</div>
+		</nav>
+	</nav>
+	<main>
+		<section class="song-carousel">
+			<div class="cover">
+				<img src="static/c1.jpg">
+			</div>
+			<div class="cover">
+				<img src="static/c2.jpg">
+			</div>
+			<div class="cover">
+				<img src="static/c3.jpg">
+			</div>
+
+		</section>
+		<aside class="song-queue">
+			<header class="queue_header-container">
+				<h1 class="color-white ">Queue</h1>
+				<div class="queue_menu">
+					<p class="color-green">Queue</p>
+					<i class="fas fa-chevron-down color-green"></i>
+				</div>
+			</header>
+			<section class="song-card">
+				<p id="song-number" class="color-gray">01</p>
+				<img src="static/mirage.jpg">
+				<div class="song_details color-white">
+					<p id="song">Mirage</p>
+					<p id="singer" class="color-gray">Else</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+			</section>
+			<section class="song-card">
+				<!-- <p id="song-number" class="color-gray">02</p> -->
+				<i id="playing-icon"class="fas fa-music color-blue"></i>
+				<img src="static/eminem.jpg">
+				<div class="song_details color-white">
+					<p id="song">Rap God</p>
+					<p id="singer" class="color-gray">Eminem</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+			</section>
+			<section class="song-card">
+				<p id="song-number" class="color-gray">03</p>
+				<img src="static/kaleo1.jpg">
+				<div class="song_details color-white">
+					<p id="song">Automobiles</p>
+					<p id="singer" class="color-gray">Kaleo</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+			</section>
+			<section class="song-card">
+				<p id="song-number" class="color-gray">04</p>
+				<img src="static/flume.jpg">
+				<div class="song_details color-white">
+					<p id="song">Flume</p>
+					<p id="singer" class="color-gray">New Skin</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+			</section>
+			<section class="song-card">
+				<p id="song-number" class="color-gray">05</p>
+				<img src="static/onism.jpg">
+				<div class="song_details color-white">
+					<p id="song">Onism</p>
+					<p id="singer" class="color-gray">Imagine Dragons</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+			</section>
+			<section class="song-card">
+				<p id="song-number" class="color-gray">01</p>
+				<img src="static/mirage.jpg">
+				<div class="song_details color-white">
+					<p id="song">Mirage</p>
+					<p id="singer" class="color-gray">Else</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+			</section>
+			<section class="song-card">
+				<p id="song-number" class="color-gray">02</p>
+				<img src="static/eminem.jpg">
+				<div class="song_details color-white">
+					<p id="song">Rap God</p>
+					<p id="singer" class="color-gray">Eminem</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+			</section>
+			<section class="song-card">
+				<p id="song-number" class="color-gray">03</p>
+				<img src="static/kaleo1.jpg">
+				<div class="song_details color-white">
+					<p id="song">Automobiles</p>
+					<p id="singer" class="color-gray">Kaleo</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+			</section>
+			<section class="song-card">
+				<p id="song-number" class="color-gray">04</p>
+				<img src="static/flume.jpg">
+				<div class="song_details color-white">
+					<p id="song">Flume</p>
+					<p id="singer" class="color-gray">New Skin</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+			</section>
+			<section class="song-card">
+				<p id="song-number" class="color-gray">05</p>
+				<img src="static/onism.jpg">
+				<div class="song_details color-white">
+					<p id="song">Onism</p>
+					<p id="singer" class="color-gray">Imagine Dragons</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+			</section>
+		</aside>
+		<section class="latest_release-container">
+			<h4 class="color-white">Latest Release</h4>
+			<div class="song_card-container">
+				<div class="song_large-card">
+					<img src="static/onism.jpg">
+					<div class="song_details color-white">
+						<p id="song">Onism</p>
+						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					</div>
+					<div class="song-option">
+					<i class="fas fa-ellipsis-h color-gray"></i>
+					<p id="song-length" class="color-gray">4:11</p>
+				</div>
+				</div>
+				<div class="song_large-card">
+					<img src="static/onism.jpg">
+					<div class="song_details color-white">
+						<p id="song">Onism</p>
+						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					</div>
+					<div class="song-option">
+					<i class="fas fa-ellipsis-h color-gray"></i>
+					<p id="song-length" class="color-gray">4:11</p>
+				</div>
+				</div>
+				<div class="song_large-card">
+					<img src="static/onism.jpg">
+					<div class="song_details color-white">
+						<p id="song">Onism</p>
+						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					</div>
+					<div class="song-option">
+					<i class="fas fa-ellipsis-h color-gray"></i>
+					<p id="song-length" class="color-gray">4:11</p>
+				</div>
+			</div>
+				<div class="song_large-card">
+					<img src="static/onism.jpg">
+					<div class="song_details color-white">
+						<p id="song">Onism</p>
+						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					</div>
+					<div class="song-option">
+					<i class="fas fa-ellipsis-h color-gray"></i>
+					<p id="song-length" class="color-gray">4:11</p>
+				</div>
+			</div>
+				</div>
+			</div>
+		</section>
+		<section class="popular_artist-container">
+			<h4 class="color-white">Popular Artists</h4>
+			<div class="artist_avatar-container">
+				<div class="artist">
+					<img src="static/bruno.jpg">
+					<p class="color-white">Bruno Mars</p>
+				</div>
+				<div class="artist">
+					<img src="static/legend.jpg">
+					<p class="color-white">Jonh Legend</p>
+				</div>
+				<div class="artist">
+					<img src="static/eminem2.jpg">
+					<p class="color-white">Slim Shady</p>
+				</div>
+				<div class="artist">
+					<img src="static/coldplay.jpg">
+					<p class="color-white">Coldplay</p>
+				</div>
+				<div class="artist">
+					<img src="static/alicia.jpg">
+					<p class="color-white">Alicia Keys</p>
+				</div>
+				<div class="artist">
+					<img src="static/jm2.jpg">
+					<p class="color-white">John Mayer</p>
+				</div>
+			</div>
+		</section>
+		<section class="stations-container">
+			<div class="station-icon">
+				<img src="static/station.jpg">
+			</div>
+			<div class="genre-icon">
+				<img src="static/love.jpg">
+				<p class="genre-name color-white">Love</p>
+			</div>
+			<div class="genre-icon">
+				<img src="static/retro.jpg">
+				<p class="genre-name color-white">Retro</p>
+			</div>
+			<div class="genre-icon">
+				<img src="static/chill.jpg">
+				<p class="genre-name color-white">Chill</p>
+			</div>
+			<div class="genre-icon">
+				<img src="static/gym.jpg">
+				<p class="genre-name color-white">Workout</p>
+			</div>
+			<div class="genre-icon">
+				<img src="static/rock.jpg">
+				<p class="genre-name color-white">Rock</p>
+			</div>
+			<div class="genre-icon">
+				<img src="static/pop.jpg">
+				<p class="genre-name color-white">Pop</p>
+			</div>
+		</section>
+		<section class="mood_songs-container">
+			<div class="mood">
+				<img src="static/party.jpg">
+				<p>Party</p>
+			</div>
+			<div class="mood">
+				<img src="static/electronic.jpg">
+				<p>Electronic</p>
+			</div>
+			<div class="mood">
+				<img src="static/roadtrip.jpg">
+				<p>Road Trip</p>
+			</div>
+		</section>
+		<section class="latest_english-container">
+			<h4 class="color-white">Latest English</h4>
+			<div class="song_card-container">
+				<div class="song_mid-card">
+					<img src="static/mirage.jpg">
+					<p class="color-white fw-600" >Mirage</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div>
+				<div class="song_mid-card">
+					<img src="static/flume.jpg">
+					<p class="color-white fw-600">Flume</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div>
+				<div class="song_mid-card">
+					<img src="static/jm1.jpg">
+					<p class="color-white fw-600">Continuum</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div>
+				<div class="song_mid-card">
+					<img src="static/mirage.jpg">
+					<p class="color-white fw-600">Mirage</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div>
+				<div class="song_mid-card">
+					<img src="static/pop.jpg">
+					<p class="color-white fw-600">Fire</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div> 
+				<div class="song_mid-card">
+					<img src="static/kaleo1.jpg">
+					<p class="color-white fw-600">Way down we go</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div>
+			</div>
+		</section>
+				<section class="latest_english-container">
+			<h4 class="color-white">Latest Hindi</h4>
+			<div class="song_card-container">
+				<div class="song_mid-card">
+					<img src="static/mirage.jpg">
+					<p class="color-white fw-600" >Mirage</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div>
+				<div class="song_mid-card">
+					<img src="static/flume.jpg">
+					<p class="color-white fw-600">Flume</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div>
+				<div class="song_mid-card">
+					<img src="static/jm1.jpg">
+					<p class="color-white fw-600">Continuum</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div>
+				<div class="song_mid-card">
+					<img src="static/mirage.jpg">
+					<p class="color-white fw-600">Mirage</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div>
+				<div class="song_mid-card">
+					<img src="static/pop.jpg">
+					<p class="color-white fw-600">Fire</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div> 
+				<div class="song_mid-card">
+					<img src="static/kaleo1.jpg">
+					<p class="color-white fw-600">Way down we go</p>
+					<p class="color-gray">AUG 11, 2019</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer class="bg-gray">
+		<div class="player-container ">
+			<div class="now-playing">
+				<img src="static/bob-marley.jpg">
+				<div class="song_details color-white">
+					<p id="song">Redemption Song</p>
+					<p id="singer" class="color-gray">Bob Marley</p>
+				</div>
+				<i class="far fa-heart color-gray"></i>
+				<i class="fas fa-ban color-gray"></i>
+			</div>
+			<div class="player-control ">
+				<div class="controls">
+					<ion-icon name="shuffle-outline" class="color-gray medium"></ion-icon></i>
+					<ion-icon name="play-skip-back" class="color-gray medium"></ion-icon>
+					<ion-icon name="pause-circle-outline" class="color-white extra-large"></ion-icon>
+					<ion-icon name="play-skip-forward" class="color-gray medium"></ion-icon>
+					<ion-icon name="repeat-outline" class="color-gray medium"></ion-icon>
+				</div>
+				<div class="time-slider">
+					<p class="time-played color-gray">3:56</p>
+					<div class="outer-range bg-lightgray">
+						<div class="inner-range bg-green">
+						</div>
+						<div class="slider">
+						</div>
+					</div>
+					<p class="time-left color-gray">4:44</p>
+				</div>
+			</div>
+			<div class="player-menu ">		
+			</div>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
