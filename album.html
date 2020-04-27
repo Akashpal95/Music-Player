@@ -13,8 +13,8 @@
 				<img src="static/ninjastudiologo.png">
 			</div>
 			<div class="logo_name-container color-white">
-				<p id="ninja">Ninja</p>
-				<p id="studio">Studio</p>
+				<p id="ninja" class="fw-100">Ninja</p>
+				<p id="studio" class="fw-800 ls-1">Studio</p>
 			</div>
 			<div class = "nav_links">
 				<ul class="horizontal_list">
@@ -40,16 +40,18 @@
 	</nav>
 	<main>
 		<aside class="playlists">
-			<section class="similar-artists">
-				<header class="similar-artists-header">
+			<section class="aside-section" id="similar-artists">
+				<header class="aside-header">
 					<h1 class="color-white">Similar Artists</h1>
 					<p class="color-gray small">View All</p>
 				</header>
 				<div class="song_large-card">
-					<img src="static/mirage.jpg">
-					<div class="song_details color-white">
-						<p id="song">Onism</p>
-						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					<div class="img-details-wrapper">
+						<img src="static/mirage.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">FEB 1, 2017</p>
+						</div>
 					</div>
 					<div class="song-option">
 						<i class="fas fa-ellipsis-h color-gray"></i>
@@ -57,10 +59,12 @@
 					</div>
 				</div>
 				<div class="song_large-card">
-					<img src="static/mirage.jpg">
-					<div class="song_details color-white">
-						<p id="song">Onism</p>
-						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					<div class="img-details-wrapper">
+						<img src="static/mirage.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">FEB 1, 2017</p>
+						</div>
 					</div>
 					<div class="song-option">
 						<i class="fas fa-ellipsis-h color-gray"></i>
@@ -68,10 +72,12 @@
 					</div>
 				</div>
 				<div class="song_large-card">
-					<img src="static/mirage.jpg">
-					<div class="song_details color-white">
-						<p id="song">Onism</p>
-						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					<div class="img-details-wrapper">
+						<img src="static/mirage.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">FEB 1, 2017</p>
+						</div>
 					</div>
 					<div class="song-option">
 						<i class="fas fa-ellipsis-h color-gray"></i>
@@ -79,8 +85,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="recently-played">
-				<header class="recently-played-header">
+			<section class="aside-section" id="recently-played">
+				<header class="aside-header">
 					<h1 class="color-white">
 						Recently Played
 					</h1>
@@ -89,56 +95,113 @@
 					</p>
 				</header>
 				<section class="song-card">
-					<p id="song-number" class="color-gray">01</p>
-					<img src="static/mirage.jpg">
-					<div class="song_details color-white">
-						<p id="song">Mirage</p>
-						<p id="singer" class="color-gray">Else</p>
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">01</p>
+						<img src="static/mirage.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Mirage</p>
+							<p id="singer" class="color-gray">Else</p>
+						</div>
 					</div>
 					<i class="far fa-heart color-gray"></i>
 				</section>
 				<section class="song-card">
-					<p id="song-number" class="color-gray">03</p>
-					<img src="static/kaleo1.jpg">
-					<div class="song_details color-white">
-						<p id="song">Automobiles</p>
-						<p id="singer" class="color-gray">Kaleo</p>
+					<!-- <p id="song-number" class="color-gray">02</p> -->
+					<div class="img-details-wrapper">
+						<i id="playing-icon"class="fas fa-music color-blue"></i>
+						<img src="static/eminem.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Rap God</p>
+							<p id="singer" class="color-gray">Eminem</p>
+						</div>
 					</div>
 					<i class="far fa-heart color-gray"></i>
 				</section>
 				<section class="song-card">
-					<p id="song-number" class="color-gray">04</p>
-					<img src="static/flume.jpg">
-					<div class="song_details color-white">
-						<p id="song">Flume</p>
-						<p id="singer" class="color-gray">New Skin</p>
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">03</p>
+						<img src="static/kaleo1.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Automobiles</p>
+							<p id="singer" class="color-gray">Kaleo</p>
+						</div>
 					</div>
 					<i class="far fa-heart color-gray"></i>
 				</section>
 				<section class="song-card">
-					<p id="song-number" class="color-gray">05</p>
-					<img src="static/onism.jpg">
-					<div class="song_details color-white">
-						<p id="song">Onism</p>
-						<p id="singer" class="color-gray">Imagine Dragons</p>
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">04</p>
+						<img src="static/flume.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Flume</p>
+							<p id="singer" class="color-gray">New Skin</p>
+						</div>
 					</div>
 					<i class="far fa-heart color-gray"></i>
 				</section>
 				<section class="song-card">
-					<p id="song-number" class="color-gray">01</p>
-					<img src="static/mirage.jpg">
-					<div class="song_details color-white">
-						<p id="song">Mirage</p>
-						<p id="singer" class="color-gray">Else</p>
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">05</p>
+						<img src="static/onism.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">Imagine Dragons</p>
+						</div>
 					</div>
 					<i class="far fa-heart color-gray"></i>
 				</section>
 				<section class="song-card">
-					<p id="song-number" class="color-gray">02</p>
-					<img src="static/eminem.jpg">
-					<div class="song_details color-white">
-						<p id="song">Rap God</p>
-						<p id="singer" class="color-gray">Eminem</p>
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">01</p>
+						<img src="static/mirage.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Mirage</p>
+							<p id="singer" class="color-gray">Else</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">02</p>
+						<img src="static/eminem.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Rap God</p>
+							<p id="singer" class="color-gray">Eminem</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">03</p>
+						<img src="static/kaleo1.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Automobiles</p>
+							<p id="singer" class="color-gray">Kaleo</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">04</p>
+						<img src="static/flume.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Flume</p>
+							<p id="singer" class="color-gray">New Skin</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">05</p>
+						<img src="static/onism.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">Imagine Dragons</p>
+						</div>
 					</div>
 					<i class="far fa-heart color-gray"></i>
 				</section>
@@ -146,9 +209,6 @@
 		</aside>
 		<section class="about-album">
 			<img src="static/coldplay-album.jpg" class="album-img">
-			<!-- <div class="album-img">
-				
-			</div> -->
 			<div class="album-info">
 				<div class="album-info-header">
 					<div class="album-name">
@@ -174,12 +234,42 @@
 			</div>
 		</section>
 		<section class="album-songs">
-			<div class="song_extended-card">
+			<section class="song-card extend">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">01</p>
+						<img src="static/mirage.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Mirage</p>
+							<p id="singer" class="color-gray">Else</p>
+						</div>
+					</div>
+					<p class="color-gray" style="align-self: start;">4:11</p>
+					<div class="icon-wrapper" style="display: inherit;align-items: center;justify-content: space-around;">
+						<i class="far fa-heart color-gray medium-small" style="margin:0px 10px;"></i>
+						<ion-icon name="add-outline" class="color-gray medium-small " style="margin:0px 10px;"></ion-icon>
+					</div>
+			</section>
+<!-- 			<div class="song_extended-card">
 				<div style="display: inherit;align-items: center;justify-content: space-around;">
 					<p id="song-number" class="color-gray">01</p>
 					<img src = "static/mirage.jpg">
 					<div class="song_details color-white">
-						<p id="song">Mirage</p>
+						<p id="song" class="fw-800 ls-05">Mirage</p>
+						<p id="singer" class="color-gray">Else</p>
+					</div>
+				</div>
+				<p id="song-length" class="color-gray">4:11</p>
+				<div style="display: inherit;align-items: center;justify-content: space-around;">
+					<i class="far fa-heart color-gray" style="margin:0px 20px;"></i>
+					<ion-icon name="add-outline" class="color-gray" style="margin:0px 20px;"></ion-icon>
+				</div>
+			</div>
+ 			<div class="song_extended-card">
+				<div style="display: inherit;align-items: center;justify-content: space-around;">
+					<p id="song-number" class="color-gray">01</p>
+					<img src = "static/mirage.jpg">
+					<div class="song_details color-white">
+						<p id="song" class="fw-800 ls-05">Mirage</p>
 						<p id="singer" class="color-gray">Else</p>
 					</div>
 				</div>
@@ -194,7 +284,7 @@
 					<p id="song-number" class="color-gray">01</p>
 					<img src = "static/mirage.jpg">
 					<div class="song_details color-white">
-						<p id="song">Mirage</p>
+						<p id="song" class="fw-800 ls-05">Mirage</p>
 						<p id="singer" class="color-gray">Else</p>
 					</div>
 				</div>
@@ -209,7 +299,7 @@
 					<p id="song-number" class="color-gray">01</p>
 					<img src = "static/mirage.jpg">
 					<div class="song_details color-white">
-						<p id="song">Mirage</p>
+						<p id="song" class="fw-800 ls-05">Mirage</p>
 						<p id="singer" class="color-gray">Else</p>
 					</div>
 				</div>
@@ -224,7 +314,7 @@
 					<p id="song-number" class="color-gray">01</p>
 					<img src = "static/mirage.jpg">
 					<div class="song_details color-white">
-						<p id="song">Mirage</p>
+						<p id="song" class="fw-800 ls-05">Mirage</p>
 						<p id="singer" class="color-gray">Else</p>
 					</div>
 				</div>
@@ -239,7 +329,7 @@
 					<p id="song-number" class="color-gray">01</p>
 					<img src = "static/mirage.jpg">
 					<div class="song_details color-white">
-						<p id="song">Mirage</p>
+						<p id="song" class="fw-800 ls-05">Mirage</p>
 						<p id="singer" class="color-gray">Else</p>
 					</div>
 				</div>
@@ -248,22 +338,7 @@
 					<i class="far fa-heart color-gray" style="margin:0px 20px;"></i>
 					<ion-icon name="add-outline" class="color-gray" style="margin:0px 20px;"></ion-icon>
 				</div>
-			</div>
-			<div class="song_extended-card">
-				<div style="display: inherit;align-items: center;justify-content: space-around;">
-					<p id="song-number" class="color-gray">01</p>
-					<img src = "static/mirage.jpg">
-					<div class="song_details color-white">
-						<p id="song">Mirage</p>
-						<p id="singer" class="color-gray">Else</p>
-					</div>
-				</div>
-				<p id="song-length" class="color-gray">4:11</p>
-				<div style="display: inherit;align-items: center;justify-content: space-around;">
-					<i class="far fa-heart color-gray" style="margin:0px 20px;"></i>
-					<ion-icon name="add-outline" class="color-gray" style="margin:0px 20px;"></ion-icon>
-				</div>
-			</div>
+			</div>  -->
 		</section>
 	</main>
 	

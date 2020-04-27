@@ -13,8 +13,8 @@
 				<img src="static/ninjastudiologo.png">
 			</div>
 			<div class="logo_name-container color-white">
-				<p id="ninja">Ninja</p>
-				<p id="studio">Studio</p>
+				<p id="ninja" class="fw-100">Ninja</p>
+				<p id="studio" class="fw-800 ls-1">Studio</p>
 			</div>
 			<div class = "nav_links">
 				<ul class="horizontal_list">
@@ -49,155 +49,183 @@
 			<div class="cover">
 				<img src="static/c3.jpg">
 			</div>
-
 		</section>
-		<aside class="song-queue">
-			<header class="queue_header-container">
-				<h1 class="color-white ">Queue</h1>
-				<div class="queue_menu">
-					<p class="color-green">Queue</p>
-					<i class="fas fa-chevron-down color-green"></i>
-				</div>
-			</header>
-			<section class="song-card">
-				<p id="song-number" class="color-gray">01</p>
-				<img src="static/mirage.jpg">
-				<div class="song_details color-white">
-					<p id="song">Mirage</p>
-					<p id="singer" class="color-gray">Else</p>
-				</div>
-				<i class="far fa-heart color-gray"></i>
-			</section>
-			<section class="song-card">
-				<!-- <p id="song-number" class="color-gray">02</p> -->
-				<i id="playing-icon"class="fas fa-music color-blue"></i>
-				<img src="static/eminem.jpg">
-				<div class="song_details color-white">
-					<p id="song">Rap God</p>
-					<p id="singer" class="color-gray">Eminem</p>
-				</div>
-				<i class="far fa-heart color-gray"></i>
-			</section>
-			<section class="song-card">
-				<p id="song-number" class="color-gray">03</p>
-				<img src="static/kaleo1.jpg">
-				<div class="song_details color-white">
-					<p id="song">Automobiles</p>
-					<p id="singer" class="color-gray">Kaleo</p>
-				</div>
-				<i class="far fa-heart color-gray"></i>
-			</section>
-			<section class="song-card">
-				<p id="song-number" class="color-gray">04</p>
-				<img src="static/flume.jpg">
-				<div class="song_details color-white">
-					<p id="song">Flume</p>
-					<p id="singer" class="color-gray">New Skin</p>
-				</div>
-				<i class="far fa-heart color-gray"></i>
-			</section>
-			<section class="song-card">
-				<p id="song-number" class="color-gray">05</p>
-				<img src="static/onism.jpg">
-				<div class="song_details color-white">
-					<p id="song">Onism</p>
-					<p id="singer" class="color-gray">Imagine Dragons</p>
-				</div>
-				<i class="far fa-heart color-gray"></i>
-			</section>
-			<section class="song-card">
-				<p id="song-number" class="color-gray">01</p>
-				<img src="static/mirage.jpg">
-				<div class="song_details color-white">
-					<p id="song">Mirage</p>
-					<p id="singer" class="color-gray">Else</p>
-				</div>
-				<i class="far fa-heart color-gray"></i>
-			</section>
-			<section class="song-card">
-				<p id="song-number" class="color-gray">02</p>
-				<img src="static/eminem.jpg">
-				<div class="song_details color-white">
-					<p id="song">Rap God</p>
-					<p id="singer" class="color-gray">Eminem</p>
-				</div>
-				<i class="far fa-heart color-gray"></i>
-			</section>
-			<section class="song-card">
-				<p id="song-number" class="color-gray">03</p>
-				<img src="static/kaleo1.jpg">
-				<div class="song_details color-white">
-					<p id="song">Automobiles</p>
-					<p id="singer" class="color-gray">Kaleo</p>
-				</div>
-				<i class="far fa-heart color-gray"></i>
-			</section>
-			<section class="song-card">
-				<p id="song-number" class="color-gray">04</p>
-				<img src="static/flume.jpg">
-				<div class="song_details color-white">
-					<p id="song">Flume</p>
-					<p id="singer" class="color-gray">New Skin</p>
-				</div>
-				<i class="far fa-heart color-gray"></i>
-			</section>
-			<section class="song-card">
-				<p id="song-number" class="color-gray">05</p>
-				<img src="static/onism.jpg">
-				<div class="song_details color-white">
-					<p id="song">Onism</p>
-					<p id="singer" class="color-gray">Imagine Dragons</p>
-				</div>
-				<i class="far fa-heart color-gray"></i>
+		<aside >
+			<section class="aside-section" id="song-queue">
+				<header class="aside-header" id="queue-header">
+					<h1 class="color-white ">Queue</h1>
+					<div class="queue_menu medium-small ls-1">
+						<p class="color-green">Queue</p>
+						<i class="fas fa-chevron-down color-green"></i>
+					</div>
+				</header>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">01</p>
+						<img src="static/mirage.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Mirage</p>
+							<p id="singer" class="color-gray">Else</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<!-- <p id="song-number" class="color-gray">02</p> -->
+					<div class="img-details-wrapper">
+						<i id="playing-icon"class="fas fa-music color-blue"></i>
+						<img src="static/eminem.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Rap God</p>
+							<p id="singer" class="color-gray">Eminem</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">03</p>
+						<img src="static/kaleo1.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Automobiles</p>
+							<p id="singer" class="color-gray">Kaleo</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">04</p>
+						<img src="static/flume.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Flume</p>
+							<p id="singer" class="color-gray">New Skin</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">05</p>
+						<img src="static/onism.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">Imagine Dragons</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">01</p>
+						<img src="static/mirage.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Mirage</p>
+							<p id="singer" class="color-gray">Else</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">02</p>
+						<img src="static/eminem.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Rap God</p>
+							<p id="singer" class="color-gray">Eminem</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">03</p>
+						<img src="static/kaleo1.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Automobiles</p>
+							<p id="singer" class="color-gray">Kaleo</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">04</p>
+						<img src="static/flume.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Flume</p>
+							<p id="singer" class="color-gray">New Skin</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
+				<section class="song-card">
+					<div class="img-details-wrapper">
+						<p id="song-number" class="color-gray">05</p>
+						<img src="static/onism.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">Imagine Dragons</p>
+						</div>
+					</div>
+					<i class="far fa-heart color-gray"></i>
+				</section>
 			</section>
 		</aside>
 		<section class="latest_release-container">
 			<h4 class="color-white">Latest Release</h4>
 			<div class="song_card-container">
 				<div class="song_large-card">
-					<img src="static/onism.jpg">
-					<div class="song_details color-white">
-						<p id="song">Onism</p>
-						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					<div class="img-details-wrapper">
+						<img src="static/onism.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">FEB 1, 2017</p>
+						</div>
 					</div>
 					<div class="song-option">
-					<i class="fas fa-ellipsis-h color-gray"></i>
-					<p id="song-length" class="color-gray">4:11</p>
-				</div>
+						<i class="fas fa-ellipsis-h color-gray"></i>
+						<p id="song-length" class="color-gray">4:11</p>
+					</div>
 				</div>
 				<div class="song_large-card">
-					<img src="static/onism.jpg">
-					<div class="song_details color-white">
-						<p id="song">Onism</p>
-						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					<div class="img-details-wrapper">
+						<img src="static/onism.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">FEB 1, 2017</p>
+						</div>
 					</div>
 					<div class="song-option">
-					<i class="fas fa-ellipsis-h color-gray"></i>
-					<p id="song-length" class="color-gray">4:11</p>
-				</div>
+						<i class="fas fa-ellipsis-h color-gray"></i>
+						<p id="song-length" class="color-gray">4:11</p>
+					</div>
 				</div>
 				<div class="song_large-card">
-					<img src="static/onism.jpg">
-					<div class="song_details color-white">
-						<p id="song">Onism</p>
-						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					<div class="img-details-wrapper">
+						<img src="static/onism.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">FEB 1, 2017</p>
+						</div>
 					</div>
 					<div class="song-option">
-					<i class="fas fa-ellipsis-h color-gray"></i>
-					<p id="song-length" class="color-gray">4:11</p>
+						<i class="fas fa-ellipsis-h color-gray"></i>
+						<p id="song-length" class="color-gray">4:11</p>
+					</div>
 				</div>
-			</div>
 				<div class="song_large-card">
-					<img src="static/onism.jpg">
-					<div class="song_details color-white">
-						<p id="song">Onism</p>
-						<p id="singer" class="color-gray">FEB 1, 2017</p>
+					<div class="img-details-wrapper">
+						<img src="static/onism.jpg">
+						<div class="song_details color-white">
+							<p id="song" class="fw-800 ls-05">Onism</p>
+							<p id="singer" class="color-gray">FEB 1, 2017</p>
+						</div>
 					</div>
 					<div class="song-option">
-					<i class="fas fa-ellipsis-h color-gray"></i>
-					<p id="song-length" class="color-gray">4:11</p>
-				</div>
-			</div>
+						<i class="fas fa-ellipsis-h color-gray"></i>
+						<p id="song-length" class="color-gray">4:11</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -308,7 +336,7 @@
 				</div>
 			</div>
 		</section>
-				<section class="latest_english-container">
+		<section class="latest_english-container">
 			<h4 class="color-white">Latest Hindi</h4>
 			<div class="song_card-container">
 				<div class="song_mid-card">
