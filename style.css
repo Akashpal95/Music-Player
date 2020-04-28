@@ -52,9 +52,10 @@ p{
 	/*justify-content: space-between;*/
 }
 
-.logo-container{
-	
+.logo-wrapper{
+	display: flex;
 }
+
 .logo-container img{
 	width:auto;
 	height:10vh;
@@ -151,7 +152,7 @@ input:focus{
 .song-carousel{
 	/*width:60% !important;*/
 	/*margin:10px !important;*/
-	width:56vw;
+	width:58vw;
 	height:auto;
 	display: flex;
 	justify-content: space-between;
@@ -238,8 +239,7 @@ input:focus{
 	justify-content: space-between;
 }
 .song_large-card{
-	width:25vw;
-	min-width: 20vw;
+	width:300px;
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -507,12 +507,13 @@ footer{
 /*************************************/
 
 
-.about-album{
+.main-section{
 	width:57vw;
-	/*height:20vh;*/
-	background-color: #141b41;
 	display: flex;
 
+}
+#about-album{
+	background-color: #141b41;
 }
 .about-album img{
 	width: 40%;
@@ -542,9 +543,7 @@ background: radial-gradient(#004092, #020202, transparent), url("static/coldplay
 	margin:0;
 
 }
-.followers{
 
-}
 
 .album-info-content{
 	letter-spacing: 0.1rem;
@@ -578,14 +577,18 @@ button:focus{
 }
 
 /*Album Songs*/
-.album-songs{
+/* .album-songs{
 	width:57vw;
+} */
+#album-songs{
+	flex-direction: column;
 }
 .extend{
 	width:100%;
 	background-color:#1a1f34;
 	margin:0;
 	padding: 10px 0;
+	margin-bottom:10px;
 }
 
 /* Common classes*/
@@ -655,4 +658,77 @@ button:focus{
 }
 .ls-05{
  letter-spacing: 0.05rem;
+}
+
+@media screen and (max-width:1100px){
+	.now-playing > i{
+		display: none;
+	}
+}
+
+@media screen and (max-width:900px){
+	main{
+		margin:8%;
+	}
+	.now-playing{
+		display:none;
+	}
+	.player-menu{
+		display:none;
+	}
+	.player-control{
+		width:100%;
+	}
+	aside{
+		display:none;
+	}
+	.main-section{
+		/* flex-wrap: wrap; */
+		width:90%;
+	}
+	.song-carousel{
+		width:90%;
+	}
+	.latest_release-container{
+		width:90%;
+	}
+	.popular_artist-container{
+		width:90%;
+	}
+	.stations-container{
+		width:90%;
+	}
+	.mood_songs-container{
+		width:90%;
+	}
+	.latest_english-container{
+		width:90%;
+	}
+	.nav_bar-container{
+		justify-content: space-between;
+	}
+	.nav_links{
+		display: none;
+	}
+	.search_box_container{
+		display: none;
+	}
+	.notification-container{
+		display: none;
+	}
+	
+	
+}
+@media screen and (max-width:660px){
+	.time-slider{
+		display:none;
+	}
+	.album-info{
+		display: none;
+	}
+	.album-img{
+		width:100%;
+		height:auto;
+	}
+	
 }
