@@ -391,6 +391,7 @@ input:focus{
 }
 
 /*Latest English*/
+
 .latest_english-container{
 	width:57.3vw;
 }
@@ -411,6 +412,7 @@ p.class-white{
 }
 
 /*Footer-Player*/
+
 footer{
 	position: fixed;
 	bottom: 0;
@@ -577,9 +579,7 @@ button:focus{
 }
 
 /*Album Songs*/
-/* .album-songs{
-	width:57vw;
-} */
+
 #album-songs{
 	flex-direction: column;
 }
